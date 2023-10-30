@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+
+<header class="cabeçalho">
+    <img class="cabeçalho-img" src ="coruja inteligente logo.png">
+        <h2 class="cabeçalho">Conhecimento Interativo</h2>
+
+
+     <nav class="menu" style="display: flex;">
+        
+        <ul>
+            <li><a href="#">Inicio</a></li>  <!--o a href é para o cursor n ficar em modo escrita-->
+            <li><a href="#">Conteudos &#9662; </a> <!--esse &#9662 é o simbolo/desenho de setinha p/baixo-->
+                <ul> <!-- Sub-menu- inicio-->
+                    <li><a href="#">Politica Brasileira</a></li>
+                    <li><a href="#">Covid-19</a></li>
+                    <li><a href="#"> Profissões</a></li>
+                </ul> <!--Sub-menu- Final-->
+            </li>
+            <li><a href="#"> Sobre</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main-Conteudo">
+    <p class="main-conteudo"> O <b>Conhecimento Interativo</b> é um site que aborda diversos conteúdos, relacionados a Historias do Brasil,
+         Política, Profissões, Disciplinas Escolares, Mundo dos Jogos, entre outros.</p>
+         <h3 class="main-guia"> <b>Guia Rápido</b></h3>
+         <p class="main-conteudo-guia"> Para começar a estudar, clique na seta da opção "Conteúdos" 
+             ou se tiver usando o celular, basta clicar no "índice" a cima, e escolher o tema 
+             do assunto que pretende aprender. 
+             Para ter acesso a mais informações, clique na opção "sobre".</p>
+             <h3 class="main-guia-fim"> <b>Bons Estudos!</b></h3>
+</main>
+
+<footer class="rodape">
+    <p class="rodape-texto"> <b>Conhecimento Interativo <br> 23/03/2022</b></p>
+</footer>
+
+
+<style type="text/css">
+    body{
+        background: #f8f0ce;
+    }
+    /*configuraçoes da barra colorida da navegação*/
+    .cabeçalho{  
+        color: azure; 
+        margin: auto;
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+    }
+    /*navegação barra do h2*/
+    .cabeçalho h2{
+        background-color:#251207; /*cor da barra cabeçalho*/
+        color: white;
+        width: 327px; /*largura da barra marrom nav*/
+        height: 40px;
+        text-align: left;
+        text-align-last: auto;
+    }
+     /*navegação barra da imagem*/
+    .cabeçalho-img{
+        height: 40px;
+        background-color: #251207;
+        width: 54px;
+    }
+    /*menu inteiro*/
+    .menu ul li{
+        background-color: #251207;
+        float: left;
+        width: 194px;  /*largura*/
+        text-align: center; /*deixa o texto do sub-menu no centro*/
+        line-height: 40px; /*tamanho altura do fundo do menu*/
+        font-size: 15px; /*tamanho da fonte, porem , se tirar n faz diferença, so se aumentar*/
+    }
+    .menu ul{
+        padding: 0; /*para n deixar preencher*/
+    }
+    .menu ul li{
+        display: inline-block;
+    }
+    .menu ul li a{ 
+        color: white; /*cor das letras no menu*/
+        text-decoration: none;
+        padding: 10px; /*tamanho do preenchimento hover quando passa o mouse na lista de conteudo */
+    }
+    .menu ul li a:hover{
+        background-color: #442f23;
+    }
+    /*sub-menu- inteiro*/
+    .menu ul li:hover ul{
+        display: block; /*sub-menu e o texto que tem fica vísivel para o usuario*/
+    }
+    .menu ul ul{
+        display: none; /*submenu fica escondido e so aparecera quando passar o mouse em cima */
+        position: absolute;
+        left: 1;
+    }
+    .menu ul ul{
+        width: 160px;
+    }
+    .menu ul ul li a{
+        display: block;
+    }
+    /*--------------*/
+    
+    /*fundo branco do main conteudo*/
+    main{
+        background-color: white;
+        border-radius: 10px;
+        border: 2px solid #251207;
+        box-shadow: 5px 5px  1px  #311e14;
+        width: 600px;
+        padding: 10px;
+        margin: auto;
+        text-align: justify;
+        margin-top: 15%;
+    }
+    /* main conteudo escrito do site*/
+    .main-conteudo{
+        color: black;
+        text-align: justify;
+        margin-top: 3%;
+        font-size: medium;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .main-guia{
+        color: #251207;
+        margin-top: 2%;
+        font-size:large;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+    .main-conteudo-guia{
+        color: black;
+        text-align: justify;
+        margin-top: 2%;
+        font-size: medium;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .main-guia-fim{
+        color: #251207;
+        text-align: center;
+        margin-top: 4%;
+        font-size: large;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    /*linha de fim no rodape*/
+    .rodape{
+        padding: 32px;
+        border-top: 0.6px solid #251207;
+        margin-top: 30%;
+    }
+    /*texto de fim do rodape*/
+    .rodape-texto{
+        color: #251207;
+        height: 49px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+    }
+</style>
+</body>
+</html>
