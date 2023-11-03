@@ -1,2 +1,2 @@
-# conhecimentoi-nterativo
+# conhecimento-interativo
 meu site com submenu
